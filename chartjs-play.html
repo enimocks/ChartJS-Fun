@@ -14,33 +14,59 @@
 
   <div class="flex-container">
     <div class="chart-wrap">
-      <canvas id="bar-chart" max-width="800" max-height="450"></canvas>
-      </div>
+      <canvas id="bar-chart" width="800px" height="500px"></canvas>
+    </div>
   </div>
 
 
   <script>
     // Bar chart
+    // constructor that instantiates the chart instance
     new Chart(document.getElementById("bar-chart"), {
+      // specifies chart type -- in this case, bar
       type: 'bar',
+
+      // x & y data input names, colors, values, labels...
       data: {
         labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
         datasets: [
           {
             label: "Population (millions)",
             backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-            data: [2478, 5267, 734, 784, 433]
+            data: [2478, 3767, 734, 784, 433]
           }
         ]
       },
+      // styling and visual options ( title, display toggles, )
       options: {
         legend: { display: false },
         title: {
           display: true,
           text: 'Predicted world population (millions) in 2050'
         }
+      },
+      maintainAspectRatio: false,
+      scales: {
+        yAxes: [{
+          stacked: true,
+          gridLines: {
+            display: true,
+            color: "rgba(255,99,132,0.2)"
+          }
+        }],
+        xAxes: [{
+          gridLines: {
+            display: false
+          }
+        }]
       }
+
     });
+
+    var options = {
+
+    };
+
   </script>
 
 </body>
