@@ -39,7 +39,15 @@
       },
       // styling and visual options ( title, display toggles, )
       options: {
-        legend: { display: false },
+        legend: {
+          display: false,
+          // TODO: figure out why this "labels" section from official docs isn't working
+          labels: {
+            // This more specific font property overrides the global property
+            fontColor: 'red',
+            defaultFontSize: 6
+          }
+        },
         title: {
           display: true,
           text: 'Predicted world population (millions) in 2050'
@@ -62,11 +70,7 @@
       }
 
     });
-
-    var options = {
-
-    };
-
+    
   </script>
 
 </body>
