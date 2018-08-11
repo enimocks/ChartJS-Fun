@@ -1,0 +1,23 @@
+{
+  "name": "chartjs-fun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chartjs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enimocks/ChartJS-Fun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enimocks/ChartJS-Fun/issues"
+  },
+  "homepage": "https://github.com/enimocks/ChartJS-Fun#readme",
+  "dependencies": {
+    "chart": "^0.1.2",
+    "js": "^0.1.0"
+  }
+}
